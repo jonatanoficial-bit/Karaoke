@@ -10,5 +10,19 @@
     "lyrics": "songs/demo/lyrics.lrc",
     "melody": "songs/demo/melody.json",
     "description": "Demonstração instrumental original gerada pelo navegador"
+  },
+  {
+    "id": "algo-novo-kemuel",
+    "title": "Algo Novo",
+    "artist": "Kemuel (part. Lukas Agustinho)",
+    "genre": "Gospel",
+    "duration": 414.6155,
+    "tint": "blue",
+    "ready": false,
+    "audio": "songs/algo-novo-kemuel/instrumental.mp3",
+    "lyrics": null,
+    "melody": null,
+    "syncEditor": "sincronizar.html",
+    "description": "Aguardando upload do playback e sincronização confirmada de 77 frases"
   }
 ]
