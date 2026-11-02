@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo-original",
+    "title": "A Luz do Meu Palco",
+    "artist": "VALE KARAOKE · Demo original",
+    "genre": "Demo",
+    "demo": true,
+    "duration": 32,
+    "tint": "purple",
+    "lyrics": "songs/demo/lyrics.lrc",
+    "melody": "songs/demo/melody.json",
+    "description": "Demonstração instrumental original gerada pelo navegador"
+  }
+]
