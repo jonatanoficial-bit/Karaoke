@@ -1,0 +1,25 @@
+{
+  "offsetMs": 0,
+  "notes": [
+    {
+      "start": 1.5,
+      "end": 2.1,
+      "midi": 60
+    },
+    {
+      "start": 2.1,
+      "end": 2.7,
+      "midi": 62
+    },
+    {
+      "start": 2.7,
+      "end": 3.4,
+      "midi": 64
+    },
+    {
+      "start": 3.4,
+      "end": 4.3,
+      "midi": 67
+    }
+  ]
+}
