@@ -118,8 +118,12 @@
     cover.append(node('span', 'card-badge', song.demo ? 'DEMONSTRAÇÃO' : 'KARAOKÊ'));
     const play = node('button', 'card-play', '▶');
     play.type = 'button';
-    play.setAttribute('aria-label', 'Cantar ' + song.title);
-    play.addEventListener('click', () => openSong(song));
+    play.setAttribute('aria-label', (song.ready === false ? 'Preparar ' : 'Cantar ') + song.title);
+    if (song.ready === false) {
+      play.textContent = '✎';
+      play.title = 'Abrir o editor de sincronização';
+      play.addEventListener('click', () => { window.location.href = song.syncEditor || 'sincronizar.html'; });
+    } else play.addEventListener('click', () => openSong(song));
     cover.append(play);
     return cover;
   }
@@ -138,10 +142,10 @@
       info.append(node('h3', '', song.title), node('p', '', song.artist));
       const foot = node('div', 'card-foot');
       foot.append(node('span', '', song.genre || 'Outras'));
-      foot.append(node('b', '', song.melody ? '★ COM PONTUAÇÃO' : 'MODO LIVRE'));
+      foot.append(node('b', '', song.ready === false ? 'EM PREPARAÇÃO' : song.melody ? '★ COM PONTUAÇÃO' : 'MODO LIVRE'));
       info.append(foot);
       card.append(info);
-      card.addEventListener('dblclick', () => openSong(song));
+      card.addEventListener('dblclick', () => { if (song.ready === false) window.location.href = song.syncEditor || 'sincronizar.html'; else openSong(song); });
       root.append(card);
     }
     $('emptyCatalog').hidden = songs.length !== 0;
