@@ -1,5 +1,18 @@
 # VALE KARAOKE — SING & SCORE
 
+## Música em preparação: “Algo Novo” — Kemuel / Lukas Agustinho
+
+Recebidos em 02/11/2026 dois áudios diferentes: gravação cantada (9min10s) e playback (6min55s), além de 77 frases da letra. A letra está em `songs/algo-novo-kemuel/letra-base.txt`.
+
+**Não marque a música como pronta antes de enviar o playback e validar os tempos.** O GitHub atualmente contém os metadados e a letra, mas não os MP3s fornecidos na conversa.
+
+Abra o [Editor de Sincronização](sincronizar.html) e marque as entradas das frases ouvindo **o playback**. O editor tem reprodução, velocidade ajustável, marcação por tecla Espaço, edição por décimos de segundo, salvamento local e exportação `.lrc`. Ele não envia áudio a servidores nem atualiza o GitHub automaticamente.
+
+Veja os [passos específicos da faixa](songs/algo-novo-kemuel/INSTRUCOES.md). A música aparece na biblioteca como **EM PREPARAÇÃO**, sem reproduzir arquivo ausente.
+
+---
+
+
 Karaokê web responsivo, independente do VALE GAME PLAY, publicado em **GitHub Pages**. Funciona em computador e Android (navegadores modernos). Somente HTML, CSS e JavaScript — sem servidores e sem dependências de build.
 
 ## Funcionalidades
